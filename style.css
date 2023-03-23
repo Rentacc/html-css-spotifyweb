@@ -7,8 +7,8 @@
 
 .container-trasp{
  background-color: black;
- width: 85%;
- height: 80px;
+ width: 87%;
+ height: 90px;
  opacity: 0.8;
  position: fixed;
  display: flex;
@@ -22,10 +22,10 @@
 
 .upgrade{
     color: white;
-    margin-right: .5rem;
     border: 1px solid white;
     border-radius: 50px;
     padding: 0.5rem 2rem;
+    margin-right: 1.5rem;
     
 }
 
@@ -33,24 +33,94 @@
     display: flex;
 }
 
+/*SIDEBAR*/
+
 .sidebar{
-    width: 231.2px;
-    height: 713px;
+    width: 15%;
+    height: 100vh;
     background-color: black;
-    position: relative;
-    
-    
-    
+    position: relative;   
+    color: gray;
 }
 
+.sideimg{
+    width: 10%;
+}
+
+.topfeatures li{
+    margin-bottom: .5rem;
+}
+
+.playlist{
+    margin-top: 1rem;
+}
+
+.playlist :first-child{
+    font-size: larger;
+    color: white;
+}
+
+.playlist *{
+    margin-bottom: .5rem;
+}
+
+.top-nav{
+    height: 80vh;
+}
+
+.foot-nav{
+ 
+ padding: 1rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: end;
+
+ 
+}
+
+.tdnone {
+    color: gray;
+    text-decoration: none;
+    margin-left: .5rem;
+}
+
+
+
+.install{
+    border-bottom: 1px solid gray;
+}
+
+
+
+
+
+/*CENTER:RECENTLY PLAYED, PLAYLIST, ARTISTS, FEATURES BAR*/
+
 .center{
-    max-height: calc(713px - 70px);
+    max-height: 100vh;
     width: 100%;
     background-color: rgba(20,25,34,255);
     overflow: auto;
     z-index: 800;
     position: relative;
 }
+
+.center-content{
+    margin-top: 100px;
+}
+
+.features{
+    min-width: auto;
+}
+
+.features *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: gray;
+}
+
 
 .player{
     width: 100%;
@@ -63,18 +133,13 @@
 
 .logo{
     background-color: black;
-    width: 200px;
-    height: 80px;
-    
-    
-    
+    max-width: 25vh;
+    min-width: 10vh;
+    margin-bottom: 1rem;
 
 }
 
-.normal-logo{
-    margin-top: 1rem;
-    width: 150px;
-}
+
 
 .cont-and-logo-flex{
     display: flex;
@@ -82,3 +147,8 @@
 
 }
 
+h2{
+    color: white;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
